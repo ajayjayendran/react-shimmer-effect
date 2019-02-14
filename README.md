@@ -76,7 +76,6 @@ export default injectSheet(StyleSheet)(App);
 ![](https://media.giphy.com/media/X81Xq7aYcjWjo7iDZN/giphy.gif)
 
 ## Contributing
----
 Feel free to send PRs. 
 
 ## License
