@@ -71,7 +71,9 @@ export default injectSheet(StyleSheet)(App);
 
 ```
 
+### Live Demo
 
+![](https://media.giphy.com/media/X81Xq7aYcjWjo7iDZN/giphy.gif)
 
 ## Contributing
 ---
