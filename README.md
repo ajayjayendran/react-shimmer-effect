@@ -1,6 +1,8 @@
 # react-shimmer-effect
 
-React-Shimmer-Effect, `<Shimmer>` component that simulates a [**shimmer**](https://github.com/facebook/Shimmer) effect for the component children.More customisable is on the way.
+> Animation is about creating illustion of life.
+
+React-Shimmer-Effect, `<Shimmer>` component that simulates a [**shimmer**](https://github.com/facebook/Shimmer) effect for the  children elements.More customisable is on the way.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-shimmer">
