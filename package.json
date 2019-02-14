@@ -1,6 +1,6 @@
 {
   "name": "react-shimmer-effect",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "React Shimmer Effect",
   "main": "dist/index.js",
   "scripts": {
