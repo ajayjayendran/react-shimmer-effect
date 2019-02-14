@@ -1,2 +1,2 @@
 # react-shimmer-effect
-React Shimmer effect to the elements
+Shimmer effect to the elements
