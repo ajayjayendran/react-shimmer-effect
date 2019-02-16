@@ -16,7 +16,7 @@ React-Shimmer-Effect, `<Shimmer>` component that simulates a [**shimmer**](https
   </a>
 </p>
 
-![Optional Text](/shimmer.js.png)
+![Optional Text](/shimmer.png)
 
 ## Install
 
