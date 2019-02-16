@@ -5,12 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/**/*.js src/**/*.jsx",
     "start": "webpack-dev-server --mode development",
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d ./dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "publish-demo": "npm run build && npm run deploy",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
     "Animations"
   ],
   "author": "Ajayjayendran",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
@@ -38,6 +40,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.0",
+    "eslint-plugin-flowtype": "^3.4.2",
     "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.1",
@@ -49,6 +52,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "flow-bin": "^0.93.0",
+    "prop-types": "^15.7.2",
     "react-jss": "^8.6.1"
   }
 }

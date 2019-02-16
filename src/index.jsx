@@ -1,32 +1,20 @@
+// @flow
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import classNames from "classnames";
-
-const styles = {
-  shimmer: {
-    background: "#f2f2f2",
-    display: "inline-block",
-    backgroundImage:
-      "linear-gradient(to right,#eeeeee 40%,#dddddd 50%,#eeeeee 60%)",
-    backgroundSize: "800px 104px",
-    backgroundRepeat: "no-repeat",
-    animation: "shimmerAnim 2s infinite linear"
-  },
-  "@keyframes shimmerAnim": {
-    "0%": {
-      backgroundPosition: "-468px 0"
-    },
-    "100%": {
-      backgroundPosition: "468px 0"
-    }
-  }
-};
+import styles from "./style";
 
 class Shimmer extends Component {
   /**
    * Appending animating shimmer class to the Shimmer component's child.
    */
+
+  static defaultProps = {
+    classes: {},
+    children: {}
+  };
+
   appendShimmerToChild(child) {
     const { classes } = this.props;
     return React.cloneElement(child, {
@@ -51,11 +39,6 @@ class Shimmer extends Component {
 Shimmer.propTypes = {
   classes: PropTypes.object,
   children: PropTypes.object
-};
-
-Shimmer.defaultProps = {
-  classes: {},
-  children: {}
 };
 
 export default injectSheet(styles)(Shimmer);
