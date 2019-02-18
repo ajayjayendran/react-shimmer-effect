@@ -1,4 +1,3 @@
-// @flow
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import injectSheet from "react-jss";
@@ -9,12 +8,6 @@ class Shimmer extends Component {
   /**
    * Appending animating shimmer class to the Shimmer component's child.
    */
-
-  static defaultProps = {
-    classes: {},
-    children: {}
-  };
-
   appendShimmerToChild(child) {
     const { classes } = this.props;
     return React.cloneElement(child, {
