@@ -2,6 +2,8 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import Shimmer from "./components/ShimmerEffect";
+import "../src/styles/ShimmerEffect.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,6 +11,13 @@ function App() {
   return (
     <>
       <div>
+        <Shimmer
+          isLoading={true}
+          shape="square"
+          duration={2}
+          colorStart="#f0f0f0"
+          colorEnd="#e0e0e0"
+        />
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

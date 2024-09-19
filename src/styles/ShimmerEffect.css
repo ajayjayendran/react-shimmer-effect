@@ -1,0 +1,34 @@
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: calc(200px + 100%) 0;
+    }
+  }
+  
+  /* Shimmer base styles */
+  .shimmer {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+  }
+  
+  /* Shimmer shapes */
+  .shimmer-rect {
+    height: 100px; /* Default height for rect */
+  }
+  
+  .shimmer-circle {
+    border-radius: 50%;
+    width: 100px; /* Default size for circle */
+    height: 100px;
+  }
+  
+  .shimmer-square {
+    width: 100px; /* Default size for square */
+    height: 100px;
+  }
