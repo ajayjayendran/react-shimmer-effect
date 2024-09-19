@@ -1,59 +1,29 @@
 {
   "name": "react-shimmer-effect",
-  "version": "1.0.9",
-  "description": "React Shimmer Effect",
-  "main": "dist/index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**/*.js src/**/*.jsx",
-    "start": "webpack-dev-server --mode development",
-    "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "npm run transpile",
-    "build": "webpack --mode production",
-    "deploy": "gh-pages -d ./dist",
-    "publish-demo": "npm run build && npm run deploy",
-    "flow": "flow"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eTechist/react-shimmer-effect.git"
-  },
-  "keywords": [
-    "React",
-    "Shimmer",
-    "Animations"
-  ],
-  "author": "Ajayjayendran",
-  "license": "MIT",
-  "peerDependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
-  },
-  "bugs": {
-    "url": "https://github.com/eTechist/react-shimmer-effect/issues"
-  },
-  "homepage": "https://github.com/eTechist/react-shimmer-effect#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^2.1.0",
-    "eslint-plugin-flowtype": "^3.4.2",
-    "gh-pages": "^2.0.1",
-    "html-webpack-plugin": "^3.2.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "flow-bin": "^0.93.0",
-    "prop-types": "^15.7.2",
-    "react-jss": "^8.6.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "globals": "^15.9.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.1"
   }
 }
